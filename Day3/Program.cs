@@ -5,7 +5,7 @@ int partOne = lines
     .Sum();
 
 int partTwo = lines
-    .ChunkForEveryNumber(3)
+    .Chunk(3)
     .Select(group => Rucksack.GetPriorityGroup(group))
     .Sum();
 
